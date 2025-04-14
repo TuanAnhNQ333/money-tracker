@@ -5,7 +5,7 @@ packages:
     dependency: transitive
     description:
       name: _flutterfire_internals
-      url: "https://pub.dartlang.org"
+      url: "https://pub.dartlang.org" 
     source: hosted
     version: "1.0.2"
   another_flushbar:
