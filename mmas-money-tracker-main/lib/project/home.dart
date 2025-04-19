@@ -10,7 +10,7 @@ import 'dart:io' show Platform;
 import 'app_pages/analysis.dart';
 import 'app_pages/input.dart';
 import 'localization/methods.dart';
-import 'app_pages/calendar.dart';
+import 'app_pages/calendar.dart';  
 import 'app_pages/others.dart';
 
 class Home extends StatefulWidget {
