@@ -9,7 +9,7 @@ packages:
     source: hosted
     version: "1.0.2"
   another_flushbar:
-    dependency: transitive
+    dependency: transitive 
     description:
       name: another_flushbar
       url: "https://pub.dartlang.org"
