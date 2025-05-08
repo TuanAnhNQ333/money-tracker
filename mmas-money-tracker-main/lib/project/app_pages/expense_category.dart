@@ -69,15 +69,15 @@ class _ExpenseCategoryBodyState extends State<ExpenseCategoryBody> {
 }
 
 // The named parameter 'body' is required, but there's no corresponding argument.  Try adding the required argument.
-// Widget searchBar() {
-//   return FloatingSearchAppBar(
-//     title: const Text('Enter Category Name'),
-//     transitionDuration: const Duration(milliseconds: 800),
-//     color: Colors.orangeAccent.shade100,
-//     colorOnScroll: Colors.greenAccent.shade200,
-//     height: 55,
-//   );
-// }
+ Widget searchBar() {
+   return FloatingSearchAppBar(
+     title: const Text('Enter Category Name'),
+     transitionDuration: const Duration(milliseconds: 800),
+     color: Colors.orangeAccent.shade100,
+     colorOnScroll: Colors.greenAccent.shade200,
+     height: 55,
+   );
+ }
 
 class CategoryContainer extends StatefulWidget {
   final BuildContext? contextEx,contextExEdit;
