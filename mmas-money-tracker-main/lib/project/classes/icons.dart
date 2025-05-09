@@ -1,14 +1,14 @@
-// //for select_icon
-// import 'package:eva_icons_flutter/eva_icons_flutter.dart';
-// import 'package:flutter/material.dart';
-// import 'package:flutter_boxicons/flutter_boxicons.dart';
-// import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-// import 'package:icofont_flutter/icofont_flutter.dart';
-// import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-// import 'package:outline_material_icons/outline_material_icons.dart';
-//
-// import 'category_item.dart';
-// import 'constants.dart';
+ //for select_icon
+ import 'package:eva_icons_flutter/eva_icons_flutter.dart';
+ import 'package:flutter/material.dart';
+ import 'package:flutter_boxicons/flutter_boxicons.dart';
+ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+ import 'package:icofont_flutter/icofont_flutter.dart';
+ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+ import 'package:outline_material_icons/outline_material_icons.dart';
+
+ import 'category_item.dart';
+ import 'constants.dart';
 //
 //
 // // [
