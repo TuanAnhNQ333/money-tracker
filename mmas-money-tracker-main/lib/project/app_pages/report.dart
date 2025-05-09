@@ -219,9 +219,9 @@ class _ReportBodyState extends State<ReportBody> {
                           height: 280.h,
                           child: SfCartesianChart(
                             primaryXAxis: CategoryAxis(
-                                // placeLabelsNearAxisLine: true,
-                                // edgeLabelPlacement: EdgeLabelPlacement.none,
-                                // majorTickLines: MajorTickLines(size: 5, width: 1),
+                                 placeLabelsNearAxisLine: true,
+                                 edgeLabelPlacement: EdgeLabelPlacement.none,
+                                 majorTickLines: MajorTickLines(size: 5, width: 1),
                                 axisLine: AxisLine(
                                   width: 3.h,
                                 ),
@@ -560,13 +560,13 @@ class _ReportBodyState extends State<ReportBody> {
 /// Returns the list of spline area series with horizontal gradient.
 List<ChartSeries<MonthAmount, String>> _getGradientAreaSeries(
     String type, List<MonthAmount> monthAmountList) {
-  // final List<Color> color = <Color>[];
-  // color.add(Colors.blue[200]!);
-  // color.add(Colors.orange[200]!);
+   final List<Color> color = <Color>[];
+   color.add(Colors.blue[200]!);
+   color.add(Colors.orange[200]!);
 
-  // final List<double> stops = <double>[];
-  // stops.add(0.2);
-  // stops.add(0.7);
+   final List<double> stops = <double>[];
+   stops.add(0.2);
+   stops.add(0.7);
 
   return <ChartSeries<MonthAmount, String>>[
     SplineAreaSeries<MonthAmount, String>(
