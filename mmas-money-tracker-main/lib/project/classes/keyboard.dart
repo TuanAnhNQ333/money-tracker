@@ -72,23 +72,23 @@ class CustomKeyboard extends StatelessWidget {
                             size: 25.sp, color: Colors.blueGrey),
                       ),
                     ),
-                    // GestureDetector(
-                    //   onTap: () {
-                    //     panelController.close();
-                    //     Navigator.push(
-                    //         context,
-                    //         MaterialPageRoute(
-                    //           builder: (context) => this.page,
-                    //         ));
-                    //   },
-                    //   child: Text(
-                    //     'Choose Category',
-                    //     style: TextStyle(
-                    //         fontSize: 16.sp,
-                    //         fontWeight: FontWeight.bold,
-                    //         color: Colors.blueGrey),
-                    //   ),
-                    // ),
+                     GestureDetector(
+                       onTap: () {
+                         panelController.close();
+                         Navigator.push(
+                             context,
+                             MaterialPageRoute(
+                               builder: (context) => this.page,
+                             ));
+                       },
+                      child: Text(
+                         'Choose Category',
+                         style: TextStyle(
+                             fontSize: 16.sp,
+                             fontWeight: FontWeight.bold,
+                             color: Colors.blueGrey),
+                       ),
+                     ),
                     GestureDetector(
                       onTap: () {
                         panelController.close();
