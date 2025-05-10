@@ -129,22 +129,22 @@ class OtherLockScreen extends StatelessWidget {
                   fontSize: 16.sp,
                   fontWeight: FontWeight.w500,
                   color: Color.fromRGBO(71, 131, 192, 1)))),
-      // footer:  TextButton(
-      //   onPressed: () => inputController.unsetConfirmed(),
-      //   child: Padding(
-      //     padding:  EdgeInsets.only(top: 20.h),
-      //     child: Text(
-      //         getTranslated(
-      //               context,
-      //               'Return',
-      //             ) ??
-      //             'Return',
-      //         style: TextStyle(
-      //             color: Color.fromRGBO(71, 131, 192, 1),
-      //             fontWeight: FontWeight.w500,
-      //             fontSize: 20.sp)),
-      //   ),
-      // ),
+       footer:  TextButton(
+         onPressed: () => inputController.unsetConfirmed(),
+         child: Padding(
+           padding:  EdgeInsets.only(top: 20.h),
+           child: Text(
+               getTranslated(
+                     context,
+                     'Return',
+                   ) ??
+                   'Return',
+               style: TextStyle(
+                   color: Color.fromRGBO(71, 131, 192, 1),
+                   fontWeight: FontWeight.w500,
+                   fontSize: 20.sp)),
+         ),
+       ),
     );
   }
 }
