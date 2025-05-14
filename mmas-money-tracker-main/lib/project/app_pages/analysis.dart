@@ -162,7 +162,7 @@ class ShowMoneyFrame extends StatelessWidget {
                       : format(value.toDouble()).length > 17
                           ? 19.5.sp
                           : 22.sp),
-              // fix here: Overflow is a temporary parameter, fix whatever it is so that the money value will never overflow
+               fix here: Overflow is a temporary parameter, fix whatever it is so that the money value will never overflow
               overflow: TextOverflow.ellipsis,
               textAlign: TextAlign.end,
             ),
@@ -223,35 +223,35 @@ class _ShowDetailsState extends State<ShowDetails> {
     return Column(
         children: List.generate(itemList.length, (int) {
       return
-          // SwipeActionCell(
-          // backgroundColor: Colors.transparent,
-          //   key: ObjectKey(transactionsSorted[int]),
-          //   performsFirstActionWithFullSwipe: true,
-          //   trailingActions: <SwipeAction>[
-          //     SwipeAction(
-          //         title: "Delete",
-          //         onTap: (CompletionHandler handler) async {
-          //           Future<void> onDeletion() async {
-          //             await handler(true);
-          //             transactionsSorted.removeAt(int);
-          //             customToast(context, 'Transactions has been deleted');
-          //             setState(() {});
-          //           }
-          //
-          //           Platform.isIOS
-          //               ? await iosDialog(
-          //                   context,
-          //                   'Deleted data can not be recovered. Are you sure you want to Delete All Transactions In This Category?',
-          //                   'Delete',
-          //                   onDeletion)
-          //               : await androidDialog(
-          //                   context,
-          //                   'Deleted data can not be recovered. Are you sure you want to Delete All Transactions In This Category?',
-          //                   'Delete',
-          //                   onDeletion);
-          //         },
-          //         color: red),
-          //   ], child:
+           SwipeActionCell(
+           backgroundColor: Colors.transparent,
+             key: ObjectKey(transactionsSorted[int]),
+             performsFirstActionWithFullSwipe: true,
+             trailingActions: <SwipeAction>[
+               SwipeAction(
+                   title: "Delete",
+                   onTap: (CompletionHandler handler) async {
+                     Future<void> onDeletion() async {
+                       await handler(true);
+                       transactionsSorted.removeAt(int);
+                       customToast(context, 'Transactions has been deleted');
+                       setState(() {});
+                     }
+          
+                     Platform.isIOS
+                         ? await iosDialog(
+                             context,
+                             'Deleted data can not be recovered. Are you sure you want to Delete All Transactions In This Category?',
+                             'Delete',
+                             onDeletion)
+                         : await androidDialog(
+                             context,
+                             'Deleted data can not be recovered. Are you sure you want to Delete All Transactions In This Category?',
+                             'Delete',
+                             onDeletion);
+                   },
+                   color: red),
+             ], child:
           GestureDetector(
               onTap: () {
                 Navigator.push(
