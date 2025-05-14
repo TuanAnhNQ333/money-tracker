@@ -63,9 +63,9 @@ class _AddInputState extends State<AddInput> {
               backgroundColor: blue1,
               appBar: InExAppBar(true),
               body:
-                  // ChangeNotifierProvider<ChangeModelType>(
-                  //     create: (context) => ChangeModelType(),
-                  //     child:
+                   ChangeNotifierProvider<ChangeModelType>(
+                       create: (context) => ChangeModelType(),
+                       child:
                   PanelForKeyboard(
                 TabBarView(
                   children: [
@@ -81,7 +81,7 @@ class _AddInputState extends State<AddInput> {
                 ),
               ))),
     )
-        // )
+         )
         ;
   }
 }
@@ -102,17 +102,17 @@ class PanelForKeyboard extends StatelessWidget {
     if (newText.length > 13) {
       newText = newText.substring(0, 13);
     }
-    // if input starts to have '.' => Don't need to reformat
+     if input starts to have '.' => Don't need to reformat
     if (newText.contains('.')) {
       String fractionalNumber = newText.split('.').last;
-      // input can not have more than 2 numbers after a decimal point
+       input can not have more than 2 numbers after a decimal point
       if (fractionalNumber.length > 2) {
         String wholeNumber = newText.split('.').first;
         newText = wholeNumber + '.' + fractionalNumber.substring(0, 2);
       }
 
       if (newText.substring(newText.length - 1) == '.') {
-        // input can not have more than 1 dot
+         input can not have more than 1 dot
         if ('.'.allMatches(newText).length == 2) {
           newText = newText.substring(0, newText.length - 1);
         }
@@ -123,7 +123,7 @@ class PanelForKeyboard extends StatelessWidget {
           format(double.parse(newText.replaceAll(',', '')));
     }
 
-    //define text input and cursor position
+    define text input and cursor position
     textSelection = TextSelection.fromPosition(
         TextPosition(offset: _amountController.text.length));
     _amountController.selection = textSelection;
@@ -133,21 +133,21 @@ class PanelForKeyboard extends StatelessWidget {
     final text = _amountController.text;
     TextSelection textSelection = _amountController.selection;
 
-    // The cursor is at the beginning.
+     The cursor is at the beginning.
     if (textSelection.start == 0) {
       return;
     }
 
     final selectionLength = textSelection.end - textSelection.start;
-    // There is a selection.
+     There is a selection.
     if (selectionLength > 0) {
       final newText = text.replaceRange(
         textSelection.start,
         textSelection.end,
         '',
       );
-      // if users delete all input or if input has '.'
-      // => Don't need to reformat when deleting
+       if users delete all input or if input has '.'
+       => Don't need to reformat when deleting
       if (newText == '' || newText.contains('.')) {
         _amountController.text = newText;
       } else {
@@ -161,7 +161,7 @@ class PanelForKeyboard extends StatelessWidget {
       return;
     }
 
-    // Delete the previous character
+     Delete the previous character
     final previousCodeUnit = text.codeUnitAt(textSelection.start - 1);
     final offset = _isUtf16Surrogate(previousCodeUnit) ? 2 : 1;
     final newStart = textSelection.start - offset;
@@ -206,7 +206,7 @@ class PanelForKeyboard extends StatelessWidget {
             _backspace();
           },
           page: model.type == 'Income'
-              // Provider.of<ChangeModelType>(context).modelType == 'Income'
+               Provider.of<ChangeModelType>(context).modelType == 'Income'
               ? IncomeCategory()
               : ExpenseCategory(),
         ),
@@ -230,15 +230,15 @@ class AddEditInput extends StatelessWidget {
     if (this.inputModel != null) {
       model = this.inputModel!;
       defaultCategory = categoryItem(this.categoryIcon!, model.category!);
-      // Provider.of<ChangeModelType>(context, listen: false)
-      //     .changeModelType(this.inputModel!.type!);
+       Provider.of<ChangeModelType>(context, listen: false)
+           .changeModelType(this.inputModel!.type!);
     } else {
       model = InputModel(
         type: this.type,
       );
       defaultCategory = categoryItem(Icons.category_outlined, 'Category');
-      // Provider.of<ChangeModelType>(context, listen: false)
-      //     .changeModelType(this.type!);
+       Provider.of<ChangeModelType>(context, listen: false)
+           .changeModelType(this.type!);
     }
     return ChangeNotifierProvider<ChangeCategoryA>(
         create: (context) => ChangeCategoryA(),
@@ -289,11 +289,11 @@ class _AmountCardState extends State<AmountCard> {
       text: model.id == null ? '' : format(model.amount!),
     );
   }
-  // @override
-  // void dispose(){
-  //   amountFocusNode!.dispose();
-  //   super.dispose();
-  // }
+   @override
+   void dispose(){
+     amountFocusNode!.dispose();
+     super.dispose();
+   }
 
   @override
   Widget build(BuildContext context) {
@@ -324,11 +324,11 @@ class _AmountCardState extends State<AmountCard> {
               showCursor: true,
               maxLines: null,
               minLines: 1,
-              // maxLength: ,
-              // inputFormatters: [
-              //   FilteringTextInputFormatter.allow(
-              //       RegExp(r'^\d*(.?|,?)\d{0,2}')),
-              // ],
+               maxLength: ,
+               inputFormatters: [
+                 FilteringTextInputFormatter.allow(
+                     RegExp(r'^\d*(.?|,?)\d{0,2}')),
+               ],
               onTap: () => _pc.open(),
               cursorColor: colorMain,
               style: GoogleFonts.aBeeZee(
@@ -420,7 +420,7 @@ class _CategoryCardState extends State<CategoryCard> {
                       ),
                     ),
                   ),
-                  // Spacer(),
+                   Spacer(),
                   Icon(
                     Icons.arrow_forward_ios_outlined,
                     size: 20.sp,
@@ -455,11 +455,11 @@ class _DescriptionCardState extends State<DescriptionCard> {
         TextEditingController(text: model.description ?? '');
   }
 
-  // @override
-  // void dispose(){
-  //   descriptionFocusNode!.dispose();
-  //   super.dispose();
-  // }
+   @override
+   void dispose(){
+     descriptionFocusNode!.dispose();
+     super.dispose();
+   }
 
   KeyboardActionsConfig _buildConfig(BuildContext context) {
     return KeyboardActionsConfig(
@@ -491,24 +491,24 @@ class _DescriptionCardState extends State<DescriptionCard> {
                                     size: 25.sp, color: Colors.blueGrey),
                               ),
                             ),
-                            // GestureDetector(
-                            //   onTap: () {
-                            //     node.unfocus();
-                            //     Navigator.push(
-                            //         context,
-                            //         MaterialPageRoute(
-                            //             builder: (context) => model.type == 'Income'
-                            //                 ? IncomeCategory()
-                            //                 : ExpenseCategory()));
-                            //   },
-                            //   child: Text(
-                            //     getTranslated(context, 'Choose Category')!,
-                            //     style: TextStyle(
-                            //         fontSize: 16.sp,
-                            //         fontWeight: FontWeight.bold,
-                            //         color: Colors.blueGrey),
-                            //   ),
-                            // ),
+                             GestureDetector(
+                               onTap: () {
+                                 node.unfocus();
+                                 Navigator.push(
+                                     context,
+                                     MaterialPageRoute(
+                                         builder: (context) => model.type == 'Income'
+                                             ? IncomeCategory()
+                                             : ExpenseCategory()));
+                               },
+                               child: Text(
+                                 getTranslated(context, 'Choose Category')!,
+                                 style: TextStyle(
+                                     fontSize: 16.sp,
+                                     fontWeight: FontWeight.bold,
+                                     color: Colors.blueGrey),
+                               ),
+                             ),
                             GestureDetector(
                                 onTap: () => node.unfocus(),
                                 child: Text(
@@ -543,7 +543,7 @@ class _DescriptionCardState extends State<DescriptionCard> {
             minLines: 1,
             keyboardType: TextInputType.multiline,
             keyboardAppearance: Brightness.light,
-            // maxLength: ,
+             maxLength: ,
             onTap: () {
               if (_pc.isPanelOpen) {
                 _pc.close();
