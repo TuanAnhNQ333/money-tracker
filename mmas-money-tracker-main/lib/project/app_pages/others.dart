@@ -57,11 +57,11 @@ class Other extends StatelessWidget {
                     '${getTranslated(context, 'Hi you')!}!',
                     style: TextStyle(fontSize: 30.sp),
                   ),
-                  // Spacer(),
-                  // Icon(
-                  //   Icons.notifications_rounded,
-                  //   size: 25.sp,
-                  // )
+                   Spacer(),
+                   Icon(
+                     Icons.notifications_rounded,
+                     size: 25.sp,
+                   )
                 ],
               ),
             ),
@@ -95,16 +95,16 @@ class _SettingsState extends State<Settings> {
         size: 35,
         color: Colors.lightBlue,
       ),
-      // Icon(
-      //   Icons.settings,
-      //   size: 32,
-      //   color: Colors.blueGrey[800],
-      // ),
-      // Icon(
-      //   Icons.feedback,
-      //   size: 35.sp,
-      //   color: Colors.black54,
-      // ),
+       Icon(
+         Icons.settings,
+         size: 32,
+         color: Colors.blueGrey[800],
+       ),
+       Icon(
+         Icons.feedback,
+         size: 35.sp,
+         color: Colors.black54,
+       ),
       Icon(
         Icons.language,
         size: 32.sp,
@@ -118,7 +118,7 @@ class _SettingsState extends State<Settings> {
       Icon(Icons.format_align_center, size: 32.sp, color: Colors.lightBlue),
       Icon(Icons.refresh, size: 32.sp, color: Colors.lightBlue),
       Icon(Icons.delete_forever, size: 32.sp, color: red),
-      // Icon(Icons.lock, size: 32.sp, color: Colors.blueGrey),
+       Icon(Icons.lock, size: 32.sp, color: Colors.blueGrey),
       Icon(
         Icons.share,
         size: 28.sp,
@@ -132,8 +132,8 @@ class _SettingsState extends State<Settings> {
     ];
     List<String> settingsList = [
       getTranslated(context, 'My Account')!,
-      // getTranslated(context, 'General Settings')!,
-      // getTranslated(context, 'Feedback')!,
+       getTranslated(context, 'General Settings')!,
+       getTranslated(context, 'Feedback')!,
       getTranslated(context, 'Language') ?? 'Language',
       getTranslated(context, 'Currency') ?? 'Currency',
       (getTranslated(context, 'Date format') ??
@@ -141,7 +141,7 @@ class _SettingsState extends State<Settings> {
               ' (${DateFormat(sharedPrefs.dateFormat).format(now)})',
       getTranslated(context, 'Reset All Categories') ?? 'Reset All Categories',
       getTranslated(context, 'Delete All Data') ?? 'Delete All Data',
-      // getTranslated(context, 'Enable Passcode') ?? 'Enable Passcode',
+       getTranslated(context, 'Enable Passcode') ?? 'Enable Passcode',
       getTranslated(context, 'Share Friends') ?? 'Share Friends',
       getTranslated(context, 'Rate App') ?? 'Rate App',
     ];
@@ -149,17 +149,17 @@ class _SettingsState extends State<Settings> {
     return ListView.builder(
         itemCount: settingsList.length,
         itemBuilder: (context, int) {
-          // void onPasscodeSwitched() {
-          //   context.read<OnSwitch>().onSwitch();
-          //   if (context.read<OnSwitch>().isPasscodeOn) {
-          //     showDialog<void>(
-          //         context: context,
-          //         builder: (providerContext) =>
-          //             OtherLockScreen(providerContext: this.providerContext));
-          //   } else {
-          //    customToast(context, 'Passcode has been disabled');
-          //   }
-          // }
+           void onPasscodeSwitched() {
+             context.read<OnSwitch>().onSwitch();
+             if (context.read<OnSwitch>().isPasscodeOn) {
+               showDialog<void>(
+                   context: context,
+                   builder: (providerContext) =>
+                       OtherLockScreen(providerContext: this.providerContext));
+             } else {
+              customToast(context, 'Passcode has been disabled');
+             }
+           }
 
           return GestureDetector(
             onTap: () async {
@@ -171,10 +171,10 @@ class _SettingsState extends State<Settings> {
                         MaterialPageRoute(builder: (context) => FormatDate()))
                     .then((value) => setState(() {}));
               } else if (int == 4) {
-                // Navigator.push(
-                //     context,
-                //     MaterialPageRoute(
-                //         builder: (context) => EditIncomeCategory(null)));
+                 Navigator.push(
+                     context,
+                     MaterialPageRoute(
+                         builder: (context) => EditIncomeCategory(null)));
                 void onReset() {
                   sharedPrefs.setItems(setCategoriesToDefault: true);
                   customToast(context, 'Categories have been reset');
@@ -209,9 +209,9 @@ class _SettingsState extends State<Settings> {
                         'Delete',
                         onDeletion);
               }
-              // else if (int == 4) {
-              //   onPasscodeSwitched();
-              // }
+               else if (int == 4) {
+                 onPasscodeSwitched();
+               }
               else if (int == 6) {
                 Share.share(
                     'https://apps.apple.com/us/app/mmas-money-tracker-bookkeeper/id1582638369');
