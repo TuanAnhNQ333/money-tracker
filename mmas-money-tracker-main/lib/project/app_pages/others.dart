@@ -214,7 +214,7 @@ class _SettingsState extends State<Settings> {
                }
               else if (int == 6) {
                 Share.share(
-                    'https://apps.apple.com/us/app/mmas-money-tracker-bookkeeper/id1582638369');
+                    'https:apps.apple.com/us/app/mmas-money-tracker-bookkeeper/id1582638369');
               } else {
                 final InAppReview inAppReview = InAppReview.instance;
                 await inAppReview.openStoreListing(
@@ -243,15 +243,15 @@ class _SettingsState extends State<Settings> {
                           backgroundColor: Color.fromRGBO(229, 231, 234, 1),
                           child: settingsIcons[int]),
                       trailing:
-                          // int == 4
-                          // ? Switch(
-                          //     value: context.watch<OnSwitch>().isPasscodeOn,
-                          //     onChanged: (value) {
-                          //       onPasscodeSwitched();
-                          //     },
-                          //     activeTrackColor: blue1,
-                          //     activeColor: Color.fromRGBO(71, 131, 192, 1),
-                          //   ) :
+                           int == 4
+                           ? Switch(
+                               value: context.watch<OnSwitch>().isPasscodeOn,
+                               onChanged: (value) {
+                                 onPasscodeSwitched();
+                               },
+                               activeTrackColor: blue1,
+                               activeColor: Color.fromRGBO(71, 131, 192, 1),
+                             ) :
                           Icon(
                         Icons.arrow_forward_ios,
                         size: 20.sp,
