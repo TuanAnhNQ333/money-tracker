@@ -273,40 +273,40 @@ class _SettingsState extends State<Settings> {
   }
 }
 
-// class Upgrade extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Stack(
-//       alignment: Alignment.center,
-//       children: [
-//         Container(
-//           height: 165.h,
-//           color: Color.fromRGBO(234, 234, 234, 1),
-//         ),
-//         Container(
-//           alignment: Alignment.center,
-//           height: 115.h,
-//           decoration: BoxDecoration(
-//               image: DecorationImage(
-//                   fit: BoxFit.fill, image: AssetImage('images/image13.jpg'))),
-//         ),
-//         Container(
-//           alignment: Alignment.center,
-//           decoration: BoxDecoration(
-//               color: Color.fromRGBO(255, 255, 255, 1),
-//               borderRadius: BorderRadius.circular(40),
-//               border: Border.all(
-//                 color: Colors.grey,
-//                 width: 0.5.w,
-//               )),
-//           height: 55.h,
-//           width: 260.w,
-//           child: Text(
-//             getTranslated(context, 'VIEW UPGRADE OPTIONS')!,
-//             style: TextStyle(fontSize: 4.206, fontWeight: FontWeight.bold),
-//           ),
-//         ),
-//       ],
-//     );
-//   }
-// }
+ class Upgrade extends StatelessWidget {
+   @override
+   Widget build(BuildContext context) {
+     return Stack(
+       alignment: Alignment.center,
+       children: [
+         Container(
+           height: 165.h,
+           color: Color.fromRGBO(234, 234, 234, 1),
+         ),
+         Container(
+           alignment: Alignment.center,
+           height: 115.h,
+           decoration: BoxDecoration(
+               image: DecorationImage(
+                   fit: BoxFit.fill, image: AssetImage('images/image13.jpg'))),
+         ),
+         Container(
+           alignment: Alignment.center,
+           decoration: BoxDecoration(
+               color: Color.fromRGBO(255, 255, 255, 1),
+               borderRadius: BorderRadius.circular(40),
+               border: Border.all(
+                 color: Colors.grey,
+                 width: 0.5.w,
+               )),
+           height: 55.h,
+           width: 260.w,
+           child: Text(
+             getTranslated(context, 'VIEW UPGRADE OPTIONS')!,
+             style: TextStyle(fontSize: 4.206, fontWeight: FontWeight.bold),
+           ),
+         ),
+       ],
+     );
+   }
+ }
