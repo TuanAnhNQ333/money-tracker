@@ -96,15 +96,15 @@ class _UserAccountState extends State<UserAccount> {
           )),
       body: Column(
         children: [
-          // Divider(
-          //   height: 0,
-          //   thickness: 0.8,
-          //   color: Colors.grey,
-          // ),
-          // Container(
-          //   height: 13,
-          //   color: Color.fromRGBO(210, 234, 251, 1),
-          // ),
+           Divider(
+             height: 0,
+             thickness: 0.8,
+             color: Colors.grey,
+           ),
+           Container(
+             height: 13,
+             color: Color.fromRGBO(210, 234, 251, 1),
+           ),
           Divider(
             height: 0,
             thickness: 0.8.w,
