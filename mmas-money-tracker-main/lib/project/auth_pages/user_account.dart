@@ -169,8 +169,8 @@ class _UserAccountState extends State<UserAccount> {
                                 size: 30.sp,
                               ),
                               onPressed: () async {
-                                // await _auth.signOut();
-                                // Navigator.pop(context);
+                                 await _auth.signOut();
+                                 Navigator.pop(context);
                               },
                             ),
                             SizedBox(
