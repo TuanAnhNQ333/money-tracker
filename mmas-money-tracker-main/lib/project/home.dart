@@ -44,7 +44,7 @@ class _HomeState extends State<Home> {
     DB.init();
     var rateMyApp = RateMyApp(
       minDays: 0,
-      // Will pop up the first time users launch the app
+       Will pop up the first time users launch the app
       minLaunches: 1,
       remindDays: 4,
       remindLaunches: 15,
@@ -58,39 +58,39 @@ class _HomeState extends State<Home> {
       rateMyApp.conditions.forEach((condition) {
         if (condition is DebuggableCondition) {
           print(condition.valuesAsString);
-          // condition.reset();
+           condition.reset();
         }
       });
       if (mounted && rateMyApp.shouldOpenDialog) {
         rateMyApp.showRateDialog(
           context,
-          // title: 'Rate this app', // The dialog title.
-          // message:
-          //     'If you like this app, please take a little bit of your time to review it!\nYour support means the world to us ^^', // The dialog message.
-          // rateButton: 'RATE', // The dialog "rate" button text.
-          // noButton: 'NO THANKS', // The dialog "no" button text.
-          // laterButton: 'MAYBE LATER', // The dialog "later" button text.
-          // listener: (button) {
-          //   // The button click listener (useful if you want to cancel the click event).
-          //   switch (button) {
-          //     case RateMyAppDialogButton.rate:
-          //       print('Clicked on "Rate".');
-          //       break;
-          //     case RateMyAppDialogButton.later:
-          //       print('Clicked on "Later".');
-          //       break;
-          //     case RateMyAppDialogButton.no:
-          //       print('Clicked on "No".');
-          //       break;
-          //   }
-          //   return true; // Return false if you want to cancel the click event.
-          // },
+           title: 'Rate this app',  //The dialog title.
+           message:
+               'If you like this app, please take a little bit of your time to review it!\nYour support means the world to us ^^',  //The dialog message.
+           rateButton: 'RATE',  The dialog "rate" button text.
+           noButton: 'NO THANKS',  The dialog "no" button text.
+           laterButton: 'MAYBE LATER',  The dialog "later" button text.
+           listener: (button) {
+              //The button click listener (useful if you want to cancel the click event).
+            switch (button) {
+               case RateMyAppDialogButton.rate:
+                 print('Clicked on "Rate".');
+                 break;
+               case RateMyAppDialogButton.later:
+                 print('Clicked on "Later".');
+                 break;
+               case RateMyAppDialogButton.no:
+                 print('Clicked on "No".');
+                 break;
+             }
+             return true; // Return false if you want to cancel the click event.
+           },
           ignoreNativeDialog: Platform
               .isAndroid, // Set to false if you want to show the Apple's native app rating dialog on iOS or Google's native app rating dialog (depends on the current Platform).
           onDismissed: () => rateMyApp.callEvent(RateMyAppEventType
               .laterButtonPressed), // Called when the user dismissed the dialog (either by taping outside or by pressing the "back" button).
-          // contentBuilder: (context, defaultContent) => Text('ok'), // This one allows you to change the default dialog content.
-          // actionsBuilder: (context) => [], // This one allows you to use your own buttons.
+           contentBuilder: (context, defaultContent) => Text('ok'), // This one allows you to change the default dialog content.
+           actionsBuilder: (context) => [], // This one allows you to use your own buttons.
         );
       }
     });
