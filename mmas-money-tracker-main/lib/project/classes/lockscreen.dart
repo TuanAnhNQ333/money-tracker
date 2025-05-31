@@ -51,7 +51,7 @@ class MainLockScreen extends StatelessWidget {
       inputButtonConfig: InputButtonConfig(
         buttonStyle: OutlinedButton.styleFrom(
           backgroundColor: Color.fromRGBO(71, 131, 192, 1),
-          //  Color.fromRGBO(89, 129, 163, 1)
+            Color.fromRGBO(89, 129, 163, 1)
         ),
       ),
     );
