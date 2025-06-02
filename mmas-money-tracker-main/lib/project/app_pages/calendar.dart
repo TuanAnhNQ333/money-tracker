@@ -55,7 +55,7 @@ class _CalendarBodyState extends State<CalendarBody> {
 
   @override
   void dispose() {
-    // _calendarController.dispose();
+     _calendarController.dispose();
     super.dispose();
   }
 
@@ -311,8 +311,8 @@ class _CalendarBodyState extends State<CalendarBody> {
                 CalendarFormat.week: getTranslated(context, 'Week')!
               },
               locale: Localizations.localeOf(context).languageCode,
-              // sixWeekMonthsEnforced: true,
-              // shouldFillViewport: true,
+               sixWeekMonthsEnforced: true,
+               shouldFillViewport: true,
               rowHeight: 52.h,
               daysOfWeekHeight: 22.h,
               firstDay: DateTime.utc(2000, 01, 01),
@@ -326,8 +326,8 @@ class _CalendarBodyState extends State<CalendarBody> {
               eventLoader: transactionsForDay,
               startingDayOfWeek: StartingDayOfWeek.monday,
               calendarStyle: CalendarStyle(
-                  // weekendTextStyle:
-                  // TextStyle().copyWith(color: Colors.blue[800]),
+                   weekendTextStyle:
+                   TextStyle().copyWith(color: Colors.blue[800]),
                   ),
 
               headerStyle: HeaderStyle(
@@ -341,7 +341,7 @@ class _CalendarBodyState extends State<CalendarBody> {
                 selectedBuilder: (context, date, _) {
                   return Container(
                     //see difference between margin and padding below: Margin: Out (for itself), padding: In (for its child)
-                    // margin: EdgeInsets.all(4.0.w),
+                    margin: EdgeInsets.all(4.0.w),
                     padding: EdgeInsets.only(top: 6.0.h, left: 6.0.w),
                     color: Color.fromRGBO(255, 168, 68, 1),
                     width: 46.w,
