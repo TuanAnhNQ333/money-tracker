@@ -138,7 +138,7 @@ class EditCategoryAppBar extends StatelessWidget implements PreferredSizeWidget 
               style: TextStyle(fontSize: 18.5.sp,  color: white),
             ),
           ),
-          // child: Icon(Icons.edit),
+           child: Icon(Icons.edit),
         ),
       ],
       title: Text(getTranslated(context, 'Edit Category')!,
