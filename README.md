@@ -1,42 +1,46 @@
-Money Tracker
-🚀 About This App
-Ever wonder where all your money goes? Money Tracker is a super intuitive mobile app designed to help you get a clear picture of your finances. It's built to make managing your personal spending as easy as possible, so you can stop guessing and start taking control.
+# MMAS: Money Tracker
 
-✨ What It Can Do For You
-Effortless Tracking: Quickly log your income and expenses in just a few taps. No more scrambling to remember what you spent where!
-Smart Spending Categories: Organize your transactions into custom categories so you can see exactly where your money is going. Groceries, entertainment, bills – you name it.
-Visual Insights: Our beautiful charts and reports give you an instant overview of your spending habits. See trends, identify areas to cut back, and make smarter decisions.
-Budgeting Made Simple: Set realistic budgets for different categories and get gentle nudges when you're nearing your limits. Stay on track without feeling restricted.
-Multi-Currency Support: Whether you're traveling or dealing with different currencies, we've got you covered.
-Keep Your Data Safe: Your financial information is personal, and we keep it secure and private.
-Clean & Simple Design: We believe managing money shouldn't be complicated. Our app is designed to be user-friendly and aesthetically pleasing.
-📱 Screenshots
-(This is where you'd put images of your app. For example:)
+> An optimized application for daily expense tracking and finance management. <br />
 
-Home Screen	Add Transaction	Reports
+![MMAS (820 x 360 px)](https://user-images.githubusercontent.com/72301141/206877824-90492e92-2e2d-4de6-b23c-312f283bdfd6.png)
 
-(You can host these images on services like Imgur, GitHub's own image hosting, or directly in your repo.)
 
-🚀 Getting Started
-Want to try it out or contribute? Here’s how you can get this project up and running on your machine:
+## Setup
 
-Clone the project:
-Bash
-git clone https://github.com/yourusername/money-tracker.git
-cd money-tracker
+Run the following commands from your terminal:
 
-Get the necessary files:
-Bash
+1) `git clone https://github.com/TuanAnhNQ333/money-tracker` to clone this repository 
 
-flutter pub get
-Run the app:
-Bash
-flutter run
-🤝 How You Can Help
-We love contributions! If you have an idea for a new feature, find a bug, or just want to make things better, feel free to:
+2) `flutter pub get` in the project root directory to install all the required dependencies.
 
-Fork this repository.
-Create your feature branch (git checkout -b feature/awesome-new-thing).
-Commit your changes (git commit -m 'Add some awesome new thing').
-Push to your branch (git push origin feature/awesome-new-thing).
-Open a Pull Request.
+
+## Download MMAS at:
+
+https://apps.apple.com/vn/app/mmas-money-tracker/id1582638369
+
+
+## Screenshots
+
+<table width="100%">
+  <tbody>
+    <tr>
+      <td width="1%"><img src="https://user-images.githubusercontent.com/72301141/206411105-4a64ada8-2a9c-4804-ad59-59302a6a82c5.jpg"/></td>
+      <td width="1%"><img src="https://user-images.githubusercontent.com/72301141/206417378-9da25e84-bf21-401c-bf23-bce3b352311e.jpg"/></td>
+       <td width="1%"><img src="https://user-images.githubusercontent.com/72301141/206417548-787625af-f4b1-4c9d-8aac-fa9bd7c47bfb.jpg"/></td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="https://user-images.githubusercontent.com/72301141/206417565-01bc0f8c-27a4-4648-a845-0a7c29a957c2.jpg"/></td>
+      <td width="1%"><img src="https://user-images.githubusercontent.com/72301141/206417707-be626efa-6bed-41be-a932-4e7a5aa22039.jpg"/></td>
+       <td width="1%"><img src="https://user-images.githubusercontent.com/72301141/206417743-8a51d828-efe0-4d3e-9f6b-5b16a4f3b086.jpg"/></td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="https://user-images.githubusercontent.com/72301141/206417756-a979fefe-23f8-4a21-bfa5-7e45745c19f0.jpg"/></td>
+      <td width="1%"><img src="https://user-images.githubusercontent.com/72301141/206417834-25dc5bb4-c099-4d90-81a6-eb4e469bc40e.jpg"/></td>
+       <td width="1%"><img src="https://user-images.githubusercontent.com/72301141/206417851-2ee18113-04bf-48ae-bf83-d377b4517742.jpg"/></td>
+    </tr>
+  </tbody>
+</table>
+
+
+## LICENSE
+MMAS: Money Tracker is [MIT-licensed](https://github.com/TuanAnhNQ333/money-tracker/blob/main/LICENSE).
