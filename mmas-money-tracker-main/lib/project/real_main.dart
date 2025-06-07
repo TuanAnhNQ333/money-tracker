@@ -14,10 +14,10 @@ void realMain() async {
   sharedPrefs.getCurrency();
   sharedPrefs.getAllExpenseItemsLists();
   runApp(MyApp()
-      // AppLock(
-      // builder: (args) => MyApp(),
-      // lockScreen: MainLockScreen(),
-      // enabled: sharedPrefs.isPasscodeOn ? true : false)
+       AppLock(
+       builder: (args) => MyApp(),
+       lockScreen: MainLockScreen(),
+       enabled: sharedPrefs.isPasscodeOn ? true : false)
       );
 }
 
@@ -86,7 +86,7 @@ class _MyAppState extends State<MyApp> {
             child: widget!,
           ),
           home: SignIn(),
-          // Home(),
+           Home(),
           locale: _locale,
           localizationsDelegates: [
             AppLocalization.delegate,
