@@ -106,7 +106,7 @@ class CategoryAppBar extends StatelessWidget implements PreferredSizeWidget {
               ),
             ]),
           ),
-          // child: Icon(Icons.edit),
+          child: Icon(Icons.edit),
         ),
       ],
       title: Text(getTranslated(context, 'Category')!,
