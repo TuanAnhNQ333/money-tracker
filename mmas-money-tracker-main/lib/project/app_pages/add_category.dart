@@ -111,16 +111,16 @@ class _CategoryNameState extends State<CategoryName> {
   @override
   void initState() {
     super.initState();
-    // categoryNameFocusNode = FocusNode();
+    categoryNameFocusNode = FocusNode();
     categoryNameController =
         TextEditingController(text: widget.categoryName ?? '');
   }
 
-  // @override
-  // void dispose() {
-  //   categoryNameFocusNode.dispose();
-  //   super.dispose();
-  // }
+  @override
+  void dispose() {
+     categoryNameFocusNode.dispose();
+     super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
