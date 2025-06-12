@@ -23,7 +23,7 @@ import 'package:money_assistant_2608/project/localization/methods.dart';
 import 'package:provider/provider.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
-import '../provider.dart';
+import '../provider.dart'; 
 import 'expense_category.dart';
 import 'income_category.dart';
 
