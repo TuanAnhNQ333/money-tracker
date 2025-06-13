@@ -501,7 +501,7 @@ class CategoryDetails extends StatelessWidget {
               Flexible(
                 flex: 0,
                 child: Text(
-                  // '${this.color!.red},' + '${this.color!.green},' + '${this.color!.blue},',
+                  '${this.color!.red},' + '${this.color!.green},' + '${this.color!.blue},',
                   format(amount) + ' ' + currency,
                   style: GoogleFonts.aBeeZee(fontSize: 20.sp),
                   overflow: TextOverflow.ellipsis,
