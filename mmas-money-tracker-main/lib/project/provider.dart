@@ -12,7 +12,7 @@ class ChangeCategoryA with ChangeNotifier {
   void changeCategory(CategoryItem? newItem) {
     categoryItemA = newItem ?? categoryItemA;
     notifyListeners();
-  }
+  } 
 }
 
 class ChangeModelType with ChangeNotifier {
