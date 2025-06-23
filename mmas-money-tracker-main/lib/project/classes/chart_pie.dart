@@ -9,7 +9,7 @@ import 'input_model.dart';
 class ChartPie extends StatelessWidget {
   const ChartPie(this.transactionsSorted);
   final List<InputModel> transactionsSorted;
-  @override
+  @override 
   Widget build(BuildContext context) {
     bool haveRecords;
     String width;
