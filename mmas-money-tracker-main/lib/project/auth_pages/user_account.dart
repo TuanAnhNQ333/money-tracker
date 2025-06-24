@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:money_assistant_2608/project/classes/constants.dart';
 
 
-// final AuthService _auth = AuthService();
+final AuthService _auth = AuthService();
 
 class UserAccount extends StatefulWidget {
   @override
