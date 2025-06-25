@@ -336,7 +336,7 @@ class _ReportBodyState extends State<ReportBody> {
                               builder: (context, selectedAnalysisDate, child) {
                                 selectedAnalysisDate ??= widget.selectedDate;
 
-                                //selectedTransactions is data sorted by category and selectedDate
+                                selectedTransactions is data sorted by category and selectedDate
                                 List<InputModel> selectedTransactions =
                                     filterData(context, transactions,
                                         selectedAnalysisDate);
