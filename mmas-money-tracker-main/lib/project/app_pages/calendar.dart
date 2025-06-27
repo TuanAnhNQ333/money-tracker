@@ -209,7 +209,7 @@ class _CalendarBodyState extends State<CalendarBody> {
                       thickness: 0.25.h,
                       indent: 20.w,
                       color: grey,
-                      // color: Color.fromRGBO(213, 215, 217, 1),
+                      color: Color.fromRGBO(213, 215, 217, 1),
                     ),
                   ],
                 ),
