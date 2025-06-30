@@ -12,7 +12,7 @@ import 'package:keyboard_actions/keyboard_actions.dart';
 import 'package:money_assistant_2608/project/classes/alert_dialog.dart';
 import 'package:money_assistant_2608/project/classes/app_bar.dart';
 import 'package:money_assistant_2608/project/classes/category_item.dart';
-import 'package:money_assistant_2608/project/classes/constants.dart';
+import 'package:money_assistant_2608/project/classes/constants.dart'; 
 import 'package:money_assistant_2608/project/classes/custom_toast.dart';
 import 'package:money_assistant_2608/project/classes/input_model.dart';
 import 'package:money_assistant_2608/project/classes/keyboard.dart';
