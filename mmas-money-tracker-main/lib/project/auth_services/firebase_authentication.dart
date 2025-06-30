@@ -55,11 +55,13 @@ try{
    return user != null ? UserUid(uid: user.uid) : null;
  }
 
+
 // // what is get?
 Stream<UserUid> get user {
    return _auth.authStateChanges().map((User user) => _userUid(user));
     .map(_userUid);
  }
+
 
 // // sign in anon
  Future signInAnon() async {
@@ -96,6 +98,7 @@ Future registerWithEmailAndPassword(String email, String password) async {
    } catch (error) {
      print(error.toString());
      return null;
+    
   }
  }
 
@@ -107,6 +110,7 @@ Future registerWithEmailAndPassword(String email, String password) async {
     print(error.toString());
      return null;
    }
+   
  }
 
  class UserUid {
