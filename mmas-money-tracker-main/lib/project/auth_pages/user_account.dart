@@ -8,7 +8,7 @@ final AuthService _auth = AuthService();
 
 class UserAccount extends StatefulWidget {
   @override
-  _UserAccountState createState() => _UserAccountState();
+  _UserAccountState createState() => _UserAccountState(); 
 }
 
 class _UserAccountState extends State<UserAccount> {
