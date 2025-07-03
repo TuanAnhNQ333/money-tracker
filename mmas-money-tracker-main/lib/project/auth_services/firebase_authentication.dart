@@ -106,7 +106,7 @@ Future registerWithEmailAndPassword(String email, String password) async {
  Future signOut() async {
    try {
     return await _auth.signOut();
-  } catch (error) {
+  } catch (error) { 
     print(error.toString());
      return null;
    }
