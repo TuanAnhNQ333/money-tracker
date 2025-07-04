@@ -96,7 +96,7 @@ Future registerWithEmailAndPassword(String email, String password) async {
      User user = result.user;
      return _userUid(user);
    } catch (error) {
-     print(error.toString());
+     print(error.toString()); 
      return null;
     
   }
