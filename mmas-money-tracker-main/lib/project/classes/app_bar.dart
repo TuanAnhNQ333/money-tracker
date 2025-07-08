@@ -10,7 +10,7 @@ import 'constants.dart';
 class BasicAppBar extends StatelessWidget with PreferredSizeWidget {
   final String title;
   const BasicAppBar(this.title);
-
+ 
   @override
   Size get preferredSize => Size.fromHeight(kToolbarHeight);
 
