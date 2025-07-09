@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:money_assistant_2608/project/classes/custom_toast.dart';
 
-
+ 
 class FirebaseAuthentication {
   static Future<FirebaseApp> initializeFireBase() async {
     FirebaseApp firebaseApp = await Firebase.initializeApp();
