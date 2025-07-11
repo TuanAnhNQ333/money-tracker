@@ -7,7 +7,7 @@ Future<void> iosDialog(BuildContext context, String content, String action,
         Function onAction) =>
     showCupertinoDialog(
         context: context,
-        builder: (BuildContext context) {
+        builder: (BuildContext context) { 
           return CupertinoAlertDialog(
             title: Padding(
               padding: EdgeInsets.only(
