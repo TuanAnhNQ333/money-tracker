@@ -21,7 +21,7 @@ import 'dart:io' show Platform;
 import '../classes/input_model.dart';
 import 'edit.dart';
 
-class Calendar extends StatelessWidget {
+class Calendar extends StatelessWidget { 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
