@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class AppLocalization {
+class AppLocalization { 
   final Locale locale;
   AppLocalization(this.locale);
   late Map<String, String> _localizedMap;
