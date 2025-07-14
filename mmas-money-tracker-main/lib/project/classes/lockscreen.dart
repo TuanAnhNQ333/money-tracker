@@ -12,7 +12,7 @@ import 'package:money_assistant_2608/project/database_management/shared_preferen
 import 'package:money_assistant_2608/project/localization/methods.dart';
 import 'package:provider/provider.dart';
 
-import '../provider.dart';
+import '../provider.dart'; 
 import 'custom_toast.dart';
 
 class MainLockScreen extends StatelessWidget {
