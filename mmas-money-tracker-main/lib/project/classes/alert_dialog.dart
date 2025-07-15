@@ -11,7 +11,7 @@ Future<void> iosDialog(BuildContext context, String content, String action,
           return CupertinoAlertDialog(
             title: Padding(
               padding: EdgeInsets.only(
-                bottom: 8.h,
+                bottom: 8.h, 
               ),
               child: Text(
                 getTranslated(context, 'Please Confirm') ?? 'Please Confirm',
