@@ -34,7 +34,7 @@ class Report extends StatefulWidget {
     required this.category,
     required this.selectedDate,
     required this.icon,
-  });
+  }); 
 
   @override
   _ReportState createState() => _ReportState();
