@@ -6,7 +6,7 @@ import 'package:sqflite/sqflite.dart';
 import '../classes/input_model.dart';
 
 abstract class DB {
-  static Database? _db;
+  static Database? _db; 
   static int get _version => 1;
 
   static Future<void> init() async {
