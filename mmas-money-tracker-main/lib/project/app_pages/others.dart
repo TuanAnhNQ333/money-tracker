@@ -25,7 +25,7 @@ class Other extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        primary: true,
+        primary: true, 
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(
             150.h,
