@@ -9,7 +9,7 @@ class CustomToast extends StatelessWidget {
 final String message;
 CustomToast(this.message);
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { 
     return  Container(
       padding:  EdgeInsets.symmetric(horizontal: 20.w, vertical: 12.h),
       decoration: BoxDecoration(
