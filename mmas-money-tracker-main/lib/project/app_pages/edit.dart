@@ -10,7 +10,7 @@ class Edit extends StatelessWidget {
   static final _formKey3 = GlobalKey<FormState>(debugLabel: '_formKey3');
   final InputModel? inputModel;
   final IconData categoryIcon;
-  const Edit({
+  const Edit({ 
     this.inputModel,
     required this.categoryIcon,
   });
