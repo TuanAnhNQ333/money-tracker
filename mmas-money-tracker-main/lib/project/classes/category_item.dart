@@ -15,7 +15,7 @@ class CategoryItem {
     return {
       'iconCodePoint': this.iconCodePoint,
       'iconFontPackage': this.iconFontPackage,
-      'iconFontFamily': this.iconFontFamily,
+      'iconFontFamily': this.iconFontFamily, 
       'text': this.text,
       'description': this.description
     };
