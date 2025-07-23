@@ -11,7 +11,7 @@ class ChartPie extends StatelessWidget {
   final List<InputModel> transactionsSorted;
   @override 
   Widget build(BuildContext context) {
-    bool haveRecords;
+    bool haveRecords; 
     String width;
     String height;
     double animationDuration;
